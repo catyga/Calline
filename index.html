@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="SHORTCUT ICON" href="icon.png">
+    <title>Calline</title>
+    <link rel="stylesheet" type="text/css" href="style_index.css">
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#" class="logo">Logo</a>
+        <div class="toggleMenu" onclick="menuToggle();"></div>
+        <ul class="navigation">
+          <li><a href="index.html" class="active">ACCUEIL</a></li>
+          <li><a href="images.html">ŒUVRES</a>
+            <ul class="sousmenu">
+              <li><a href="images.html#period1">Titre 1</a></li>
+              <li><a href="images.html#period2">Titre 2</a></li>
+              <li><a href="images.html#period3">Titre 3</a></li>
+              <li><a href="images.html#period4">Titre 4</a></li>
+            </ul>
+          </li>
+          <li><a href="bio.html">BIO</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBx">
+          <h2>TITRE<br><span>Sous-titre</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1617551359">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <img src="1.png" class="boum">
+    </section>
+    <script type="text/javascript">
+      function menuToggle() {
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>

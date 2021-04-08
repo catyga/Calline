@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  list-style-type: none;
+}
+
+header .navigation li a {
+  color: #fff;
+  margin-left: 40px;
+  text-decoration: none;
+}
+header .toggleMenu {
+  background-color: #fff;
+}
+
+header .navigation li a:hover {
+  display: block;
+  background-color: #fff;
+  color: #000;
+}
+
+header .navigation li a.active {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.sousmenu {
+  display: none;
+  padding-left: 0px;
+}
+ .navigation li ul {
+  position: absolute;
+}
+
+.navigation li:hover ul {
+  display: block;
+  background: #000;
+}
+
+@media (max-width: 991px) {
+  header{
+    padding: 20px 40px;
+  }
+
+  header ul.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header ul.navigation.active {
+    display: flex;
+  }
+  header .navigation li a {
+    color: #fff;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 3em;
+  }
+  header .toggleMenu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px;
+  }
+  header .toggleMenu.active {
+    position: fixed;
+    right: 40px;
+    background: url(close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+  }
+}
+
+.custom-shape-divider-bottom-1617617742 {
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-bottom-1617617742 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1617617742 .shape-fill {
+    fill: #E74C3C;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact li {
+  position: relative;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.contact li a {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50%;
+  color: #e2e2e2;
+  box-shadow: inset -1px -1px 2px rgba(128, 139, 150, 0.4),
+              2px 2px 5px rgba(128, 139, 150, 0.4);
+  transition: 0.3s;
+}
+
+.contact li a:hover {
+  color: #999;
+  transform: translateY(-10px);
+  box-shadow: inset -1px -1px 2px rgba(128, 139, 150, 0.5),
+              2px 24px 10px rgba(128, 139, 150, 0.3);
+}
+
+.contact li a .fa {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.contact li a:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.1);
+}.contact li:nth-child(1) a:before {
+  background: #25d366;
+}
+
+.contact li:nth-child(2) a:before {
+  background: #5DADE2;
+}
+
+
+h1{
+  text-align: center;
+  padding-bottom: 20%;
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
